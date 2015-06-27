@@ -1,0 +1,15 @@
+<ul class="main-layout-panel">
+  <li id="banner-panel" class="banner-panel area">
+    <div class="logo">
+        <h4 class="top-header">
+            This is an example Backbone Marionette application
+        </h4>
+        <h4 class="top-header">
+            Belfast JS
+        </h4>
+    </div>
+  </li>
+  <li id="workspace-panel" class="workspace-panel area">
+    <h4> Workspace Panel </h4>
+  </li>
+</ul>

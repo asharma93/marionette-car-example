@@ -1,0 +1,30 @@
+<ul class="main-panel">
+    <li id="user-panel" class="user-panel area">
+        <div class="navbar navbar-default navbar-static-top">
+        <div class="container"> <!-- Nav container -->
+            <div class="navbar-header">
+                <div class="navbar-brand">Logo</div>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".btnCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse btnCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">How We Help</a></li>
+                    <li><a href="#">Alliances</a></li>
+                    <li><a href="#">Who We Are</a></li>
+                </ul>
+            </div>
+            </div>
+        </div> <!-- end Nav container -->
+      
+    </li>
+    <li id="main-content-panel" class="main-content-panel area"> 
+      <h4> Main panel </h4>
+    </li>
+</ul>

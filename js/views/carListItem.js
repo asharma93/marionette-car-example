@@ -13,6 +13,12 @@ define(function(require) {
         template: template,
         className: "car-list-item",
         tagName: "li",
+        events: {
+            "click .car-item": "carSelected"
+        },
+        carSelected: function() {
+            console.log("car selected");
+        },
         initialize: function(options) {
             options = options || {};
             this.manufacturer = options.manufacturer;

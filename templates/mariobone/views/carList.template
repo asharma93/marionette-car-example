@@ -1,3 +1,4 @@
 <ul class="car-list">
-
+    <!-- Car list is inserted here -->
 </ul>
+<a class="btn btn-default" href="home">Home</a>

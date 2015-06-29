@@ -20,13 +20,15 @@ define(function(require) {
         },
         onHome: function() {
             var mainContentRegion = getRegion("mainContentRegion");
+            if (mainContentRegion.hasView()) {
+                this.mainLayout = new MainLayout();
+            }
             mainContentRegion.show(this.mainLayout);
         },
         // Get the Manufacturer name that was selected and find the car models details against the Car Collecion
         onManufacturer: function(car) {
             var manufacturerModels;
             manufacturerModels = CarCollection.findWhere({manufacturer: car});
-            console.log("Do something: " + manufacturerModels);
             this.mainLayout.triggerMethod("manufacturer:selected", manufacturerModels);
         },
         onCar: function(options) {

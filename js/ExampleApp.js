@@ -80,6 +80,10 @@ define(function(require) {
 
         this.Router = this.Router || new MainRouter(options.routePrefix);
         this.Router.navigate(options.route || "home", {trigger: true});
+
+        if (!Backbone.History.started) {
+            Backbone.history.start();
+        }
         Backbone.Wreqr.radio.channel("active").vent.trigger("application:started", this);
     });
     

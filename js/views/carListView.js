@@ -9,7 +9,7 @@ define(function(require) {
         CarListItem = require("views/carListItem"),
         template = require("hbs!templates/mariobone/views/carList");
 
-    return Backbone.Marionette.CollectionView.extend({
+    return Backbone.Marionette.CompositeView.extend({
         template: template,
         className: "car-list-panel",
         childView: CarListItem,

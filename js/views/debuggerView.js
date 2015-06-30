@@ -5,15 +5,12 @@
 define(function(require) {
     var Backbone = require("backbone"),
     /* jshint unused:false */
+        utils = require("objects/eventUtilities"),
         Marionette = require("marionette"),
-        template = require("hbs!templates/mariobone/views/manufacturerItem");
+        template = require("hbs!templates/mariobone/views/debugger");
 
     return Backbone.Marionette.ItemView.extend({
         template: template,
-        className: "manufacturer-item",
-        tagName: "li",
-        initialize: function() {
-            console.log("itemview");
-        }
+        className: "debugger"
     });
 });

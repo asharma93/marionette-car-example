@@ -29,7 +29,6 @@
 	position: relative;
 	height: 97%;
 	width: 100%;
-	border: 2px solid;
 }
 #workspace-panel {
 	display: inline-block;
@@ -50,19 +49,4 @@
 	display: inline-block;
 	border: 2px solid;
 	margin-left: 25px;
-}
-
-/*
-    Foundation CSS
-*/
-.banner {
-  margin: 0 auto 0 auto;
-  .top-header {
-    text-align: center;
-    margin: 0 auto 0 auto;
-    &:nth-child(2) {
-        width: 100px;
-    }
-  }
-
 }

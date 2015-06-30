@@ -79,7 +79,7 @@ define(function(require) {
         $(window).on("resize", setMainPanelHeight);
 
         this.Router = this.Router || new MainRouter(options.routePrefix);
-        this.Router.navigate(options.route || "home", {trigger: true});
+        this.Router.navigate(options.route || "cars/index", {trigger: true});
 
         if (!Backbone.History.started) {
             Backbone.history.start();

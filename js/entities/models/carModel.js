@@ -11,30 +11,30 @@ define(function(require) {
     return Backbone.Model.extend({
         defaults: function() {
             return {
-                manufacturer: "",
-                model: "",
-                year: "",
-                img: "img/civic.jpg"
+                id: "1",
+                manufacturer: "Honda",
+                model: "Civic",
+                year: "2012",
+                img: "civic.jpg"
             };
         },
         validate: function(attrs) {
             var errors = {};
 
             if (!attrs.manufacturer) {
-                errors.manufacturer = "Manufacturer";
+                errors.manufacturer = "Please enter a Manufacturer";
             }
             if (!attrs.model) {
-                errors.model = "Model";
+                errors.model = "Please enter a Model";
             }
             if (!attrs.year) {
-                errors.year = "Year";
+                errors.year = "Please enter a Year";
             }
             if (!attrs.img) {
-                errors.img = "Image Reference";
+                errors.img = "Please specify an Image Reference";
             }
 
             if (!_.isEmpty(errors)) {
-                errors.message = "You left out:";
                 return errors;
             }
         }

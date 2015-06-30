@@ -3,7 +3,7 @@
         <div class="navbar navbar-default navbar-static-top">
         <div class="container"> <!-- Nav container -->
             <div class="navbar-header">
-                <div class="navbar-brand">Logo</div>
+                <div class="navbar-brand">Amit Sharma</div>
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".btnCollapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -13,11 +13,11 @@
 
             <div class="collapse navbar-collapse btnCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">How We Help</a></li>
-                    <li><a href="#">Alliances</a></li>
-                    <li><a href="#">Who We Are</a></li>
+                    <li class="active"><a href="#">Some</a></li>
+                    <li><a href="#"> Cool </a></li>
+                    <li><a href="#">Tabs</a></li>
+                    <li><a href="#">Up</a></li>
+                    <li><a href="#">Here</a></li>
                 </ul>
             </div>
             </div>

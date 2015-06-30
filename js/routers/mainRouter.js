@@ -13,9 +13,11 @@ define(function(require) {
 	return Marionette.SubRouter.extend({
         controller: new MainController(),
         appRoutes: {
-            "" : "onHome",
-            "home": "onHome",
-            "car/new": "onCarNew"
+            "" : "onIndex",
+            "cars/index": "onIndex",
+            "car/new": "onCarNew",
+            "car/:id/view": "onCarShow",
+            "car/:id/edit": "onCarEdit"
         },
         onRoute: function(rootOptions, rootOptions1, rootOptions3) {
             this.options = [rootOptions, rootOptions1, rootOptions3];

@@ -1,12 +1,14 @@
+<hr>
 <div class="banner">
-    <h4 class="top-header">
-        This is an example Backbone Marionette application
-    </h4>
-    <h4 class="top-header">
-        Belfast JS
-    </h4>
+    <p class="top-header">
+        An example Backbone Marionette application
+    </p>
+    <div class="top-header">
+        <img src="img/belfastjs.jpeg" height="100" width="100">
+    </div>
 </div>
+<hr>
 <ul class="panel-layout">
-    <div class="workspace-container"> List </div>
-    <div class="debugger-container"> Display </div>
+    <li class="workspace-container"> List </li>
+    <li class="debugger-container"> Display </li>
 </ul>

@@ -1,0 +1,24 @@
+<div class="well">
+    <div class="alert alert-danger fade in" style="display:none;"></div>
+    <form>
+        <h2>{{manufacturer}}</h2>
+        <div class="form-group">
+            <label>Manufacturer:</label>
+            <input type="text" class="form-control" name="manufacturer" value="{{manufacturer}}" />
+        </div>
+        <div class="form-group">
+            <label>Model:</label>
+            <input type="text" class="form-control" name="model" value="{{model}}" />
+        </div>
+        <div class="form-group">
+            <label>Year:</label>
+            <input type="text" class="form-control" name="year" value="{{year}}" />
+        </div>
+        <div class="form-group">
+            <label>Image Ref:</label>
+            <input type="text" class="form-control" name="img" value="{{img}}" />
+        </div>
+        <button class="save btn btn-large btn-info" type="submit">Save</button>
+        <a href="#cars/index" class="cancel btn btn-large">Cancel</a>
+    </form>
+</div>

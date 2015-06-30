@@ -1,0 +1,14 @@
+<ol class="breadcrumb">
+    <li>
+        <a href="#cars/index">All Cars</a>
+    </li>
+    <li class="active">View Car</li>
+</ol>
+
+<h2>
+    {{manufacturer}}
+    <small> {{model}} </small>
+</h2>
+<p style="white-space:pre-wrap;">{{year}}</p>
+<hr/>
+<a class="btn btn-info btn-block" href="#car/{{id}}/edit">Edit Details</a>

@@ -6,15 +6,10 @@ define(function(require) {
     var Backbone = require("backbone"),
     /* jshint unused:false */
         Marionette = require("marionette"),
-        ManufacturerCollection = require("entities/collections/manufacturerCollection"),
-        ManufacturerItemView = require("views/manufacturerItemView"),
-        template = require("hbs!templates/mariobone/layout/mainContent");
+        template = require("hbs!templates/mariobone/views/showCar");
 
-    return Backbone.Marionette.CollectionView.extend({
+    return Backbone.Marionette.ItemView.extend({
         template: template,
-        className: "manufacturer-list-panel",
-        childView: ManufacturerItemView,
-        childViewContainer: "ul",
-        collection: ManufacturerCollection
+        className: "car-item"
     });
 });

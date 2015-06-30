@@ -1,6 +1,7 @@
 <div class="well">
     <a class="btn btn-block btn-large btn-info" href="#car/new">Add a car</a>
 </div>
+<hr>
 <table class="table table-striped">
 <thead>
 <tr>

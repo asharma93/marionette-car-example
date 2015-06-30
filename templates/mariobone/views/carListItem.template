@@ -4,7 +4,7 @@
 <td>{{model}}</td>
 <td>{{year}}</td>
 <td>
-    <img src="img/cars/{{img}}" height="120" width="200">
+    <img src="img/cars/{{img}}.jpg" height="120" width="200">
 </td>
 <td>
     <a href="#" class="delete btn btn-danger btn-small">Remove</a>

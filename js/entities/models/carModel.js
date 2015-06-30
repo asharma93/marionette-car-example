@@ -15,7 +15,7 @@ define(function(require) {
                 manufacturer: "Honda",
                 model: "Civic",
                 year: "2012",
-                img: "civic.jpg"
+                img: "civic"
             };
         },
         validate: function(attrs) {

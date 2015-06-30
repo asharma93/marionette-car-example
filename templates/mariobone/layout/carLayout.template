@@ -1,3 +1,12 @@
-<div class="list-container"> List </div>
-<div class="display-container"> Display </div>
-<div class="controls-container"> Controls </div>
+<div class="banner">
+    <h4 class="top-header">
+        This is an example Backbone Marionette application
+    </h4>
+    <h4 class="top-header">
+        Belfast JS
+    </h4>
+</div>
+<ul class="panel-layout">
+    <div class="workspace-container"> List </div>
+    <div class="debugger-container"> Display </div>
+</ul>

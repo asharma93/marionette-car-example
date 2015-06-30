@@ -1,0 +1,39 @@
+<div class="car-image">
+    <img src="{{imgSrc}}" height="400" width="400">
+</div>
+
+
+<div class="car-details">
+    <table class="table">
+        <tbody>
+        <tr>
+            <td class="caption"> Model: </td>
+            <td class=""> {{model}} </td>
+            <td class="caption"> Type: </td>
+            <td class=""> {{type}} </td>
+        </tr>
+        <tr>
+            <td class="caption"> BHP: </td>
+            <td class=""> {{bhp}} </td>
+            <td class="caption"> Top Speed:  </td>
+            <td class=""> {{topSpeed}} </td>
+        </tr>
+        <tr>
+            <td class="caption"> Year: </td>
+            <td class=""> {{year}} </td>
+            <td class="caption"> Price:  </td>
+            <td class=""> {{price}} </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!--{-->
+<!--"model": "Civic",-->
+<!--"type": "Type-R",-->
+<!--"bhp": "200",-->
+<!--"topSpeed": "140mph",-->
+<!--"price": "£16,000"-->
+<!--"year": "2012"-->
+<!--},-->

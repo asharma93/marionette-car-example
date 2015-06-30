@@ -5,9 +5,10 @@
 
 define(function(require) {
     var Marionette = require("marionette"),
-        //Backbone = require("backbone"),
+        Backbone = require("backbone"),
         utils = require("objects/eventUtilities"),
-        CarCollection = require("entities/collections/manufacturerCollection"),
+        CarListView = require("views/carListView"),
+        CarModel = require("entities/exampleModel"),
         MainLayout = require("layouts/mainLayout");
 
     function getRegion(name) {
@@ -16,7 +17,10 @@ define(function(require) {
     
     return Marionette.Controller.extend({
         initialize: function() {
+            var carModel = new CarModel();
             this.mainLayout = new MainLayout();
+            this.collection = new Backbone.Collection();
+            this.collection.add(carModel);
         },
         onHome: function() {
             var mainContentRegion = getRegion("mainContentRegion");
@@ -24,15 +28,12 @@ define(function(require) {
                 this.mainLayout = new MainLayout();
             }
             mainContentRegion.show(this.mainLayout);
+            this.mainLayout.workspaceRegion.show(new CarListView({
+                collection: this.collection
+            }));
         },
-        // Get the Manufacturer name that was selected and find the car models details against the Car Collecion
-        onManufacturer: function(car) {
-            var manufacturerModels;
-            manufacturerModels = CarCollection.findWhere({manufacturer: car});
-            this.mainLayout.triggerMethod("manufacturer:selected", manufacturerModels);
-        },
-        onCar: function(options) {
-            console.log("Car selected options: " + options);
+        onCarNew: function() {
+
         }
     });
 });

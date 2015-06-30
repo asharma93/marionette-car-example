@@ -6,20 +6,19 @@ define(function(require) {
     /* jshint unused:false */
     var Backbone = require("backbone"),
         _ = require("underscore"),
-        utils = require("objects/eventUtilities"),
         Marionette = require("marionette"),
-        ManufacturerListView = require("views/manufacturerListView"),
-        CarListView = require("views/carListView"),
-        template = require("hbs!templates/mariobone/layout/carLayout");
+        CarLayout = require("layouts/carLayoutView"),
+        template = require("hbs!templates/mariobone/layout/mainContent");
 
     return Backbone.Marionette.LayoutView.extend({
-        className: "car-layout",
+        className: "main-content-layout",
         template: template,
         regions: {
-            workspaceRegion: ".workspace-container",
-            debuggerRegion: ".debugger-container"
+            // Remove the banner regions static content if TIME
+            workspaceRegion: "#top-panel",
+            loggerRegion : "#bottom-panel"
         },
-        onShow: function() {
+        initialize: function() {
         }
     });
 });

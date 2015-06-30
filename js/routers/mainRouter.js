@@ -15,8 +15,7 @@ define(function(require) {
         appRoutes: {
             "" : "onHome",
             "home": "onHome",
-            "manufacturer/(:manufacturer)": "onManufacturer",
-            "manufacturer/(:manufacturer)/(:car)": "onCar"
+            "car/new": "onCarNew"
         },
         onRoute: function(rootOptions, rootOptions1, rootOptions3) {
             this.options = [rootOptions, rootOptions1, rootOptions3];

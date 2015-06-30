@@ -1,4 +1,15 @@
-<ul class="car-list">
-    <!-- Car list is inserted here -->
-</ul>
-<a class="btn btn-default" href="home">Home</a>
+<div class="well">
+    <a class="btn btn-block btn-large btn-info" href="#car/new">Add a car</a>
+</div>
+<table class="table table-striped">
+<thead>
+<tr>
+    <th width="20%">Manufacturer</th>
+    <th width="20%">Model</th>
+    <th>Year</th>
+    <th></th>
+</tr>
+</thead>
+    <tbody>
+
+    </tbody>

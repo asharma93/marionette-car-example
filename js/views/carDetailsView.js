@@ -5,14 +5,11 @@
 define(function(require) {
     var Backbone = require("backbone"),
     /* jshint unused:false */
+        utils = require("objects/eventUtilities"),
         Marionette = require("marionette"),
-        CarListItem = require("views/carListItem"),
-        template = require("hbs!templates/mariobone/views/carList");
+        template = require("hbs!templates/mariobone/views/carDetails");
 
-    return Backbone.Marionette.CompositeView.extend({
-        template: template,
-        className: "table table-striped",
-        childView: CarListItem,
-        childViewContainer: "tbody"
+    return Backbone.Marionette.ItemView.extend({
+        template: template
     });
 });

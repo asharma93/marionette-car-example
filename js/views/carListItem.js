@@ -12,7 +12,7 @@ define(function(require) {
     return Backbone.Marionette.ItemView.extend({
         template: template,
         className: "car-list-item",
-        tagName: "li",
+        tagName: "tr",
         events: {
             "click .car-item": "carSelected"
         },
@@ -20,14 +20,7 @@ define(function(require) {
             console.log("car selected");
         },
         initialize: function(options) {
-            options = options || {};
-            this.manufacturer = options.manufacturer;
-        },
-        serializeData: function() {
-            return {
-                car: this.model.attributes,
-                manufacturer: this.manufacturer
-            };
+            this.model = options.model || {};
         }
     });
 });

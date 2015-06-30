@@ -1,1 +1,9 @@
-<a href="manufacturer/{{manufacturer}}/{{car.model}}" class="car-item"> {{car.model}}</a>
+<td>
+    <a href="#note/{{id}}/view">{{manufacturer}}</a>
+</td>
+<td>{{model}}</td>
+<td>{{year}}</td>
+<td>
+    <a href="#" class="delete btn btn-danger btn-small">delete</a>
+</td>
+<img src="{{img}}" height="100" width="100">

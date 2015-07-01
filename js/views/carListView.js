@@ -13,6 +13,9 @@ define(function(require) {
         template: template,
         className: "table table-striped",
         childView: CarListItem,
-        childViewContainer: "tbody"
+        childViewContainer: "tbody",
+        onAddChild: function() {
+            console.log("Event: add:child");
+        }
     });
 });

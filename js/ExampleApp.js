@@ -85,6 +85,11 @@ define(function(require) {
             Backbone.history.start();
         }
         Backbone.Wreqr.radio.channel("active").vent.trigger("application:started", this);
+
+        // Log console messages to div
+        console.log = function(message) {
+            $("#viewOutput").append("<p>" + message + "</p>");
+        };
     });
     
     return ExampleApp;

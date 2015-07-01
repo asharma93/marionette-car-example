@@ -27,6 +27,8 @@ define(function(require) {
             this.car = options.car || new Backbone.Model();
             this.cars = options.cars || new Backbone.Collection();
             this.car.bind("invalid", this.showErrors, this);
+
+            this.viewName = "newCarView";
         },
         saveCar: function(event) {
             // prevent the form from submitting

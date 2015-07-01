@@ -14,6 +14,12 @@ define(function(require) {
         regions: {
             workspaceRegion: ".workspace-container",
             debuggerRegion: ".debugger-container"
+        },
+        initialize: function() {
+            // Each time the mainLayout.workspace renders a new view, log the event
+            this.workspaceRegion.on("show", function(view) {
+                console.log("Workspace Region: show : " + view.viewName);
+            });
         }
     });
 });

@@ -4,10 +4,8 @@
  ************************************************************************/
 define(function(require) {
     var Backbone = require("backbone"),
-    /* jshint unused:false */
-        utils = require("objects/eventUtilities"),
-        Marionette = require("marionette"),
         template = require("hbs!templates/mariobone/views/debugger");
+    require("marionette");
 
     return Backbone.Marionette.ItemView.extend({
         template: template,

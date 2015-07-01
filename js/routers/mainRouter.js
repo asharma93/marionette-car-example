@@ -18,9 +18,6 @@ define(function(require) {
             "car/new": "onCarNew",
             "car/:id/view": "onCarShow",
             "car/:id/edit": "onCarEdit"
-        },
-        onRoute: function(rootOptions, rootOptions1, rootOptions3) {
-            this.options = [rootOptions, rootOptions1, rootOptions3];
         }
     });
 });

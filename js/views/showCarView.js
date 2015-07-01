@@ -10,6 +10,9 @@ define(function(require) {
 
     return Backbone.Marionette.ItemView.extend({
         template: template,
-        className: "car-item"
+        className: "car-item",
+        initialize: function() {
+            this.viewName = "showCarView";
+        },
     });
 });

@@ -21,6 +21,9 @@ define(function(require) {
         events: {
             "click @ui.saveBtn": "updateCar"
         },
+        initialize: function() {
+            this.viewName = "editCarView";
+        },
         updateCar: function(event) {
             // prevent the form submitting
             event.stopPropagation();

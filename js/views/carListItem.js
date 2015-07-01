@@ -12,14 +12,10 @@ define(function(require) {
         className: "car-list-item",
         tagName: "tr",
         events: {
-            "click .car-item": "carSelected",
             "click a.delete": "removeChild"
         },
         initialize: function() {
             this.cars = this.model.collection;
-        },
-        carSelected: function() {
-            console.log("car selected");
         },
         removeChild: function(event) {
 
@@ -29,8 +25,9 @@ define(function(require) {
             // this is where we would post to the backend and delete this entry
             //this.model.destroy();
             this.cars.remove(this.model);
-
+        },
+        onBeforeDestroy: function() {
+            console.log("ItemView: before:destroy");
         }
-
     });
 });
